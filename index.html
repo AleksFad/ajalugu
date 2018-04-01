@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ajalugu</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700%7CPT+Sans:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" />
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+		<div id="header">
+			<div class="container">
+				<h2><span>Tee ise</span></h2>
+				<div class="main-text">
+					<p class="transformed">IMELINE</p><h1>Ajalugu</h1>
+				</div>	
+				<h4>Vali nende põnevate lugude seast välja enda lemmikud. Sinu ja teiste lugejate soovide põhjal paneme kokku ajakirja novembri numbri.Nii sünnib Eesti esimene lugejate poolt kokku pandud ajakiri,mille Sina võid saada endale tasuta!</h4>
+				<a href="#down" class="favorite">
+					<span class="arrow"><img src="img/arrow-down.png" alt=""></span>
+					<div class="btn-favorite"><h3>Vali oma lemmikartiklid</h3></div>
+				</a>			
+			</div>
+		</div>
+		<div id="content">
+			<a id="down"></a>
+			<div class="container">
+				<div class="intro">
+					<h3>Pane kokku omaenda Imeline Ajalugu</h3>
+					<p>Vali igast teemast kuni 3 artiklit Imelise Ajaloo novembri numbrisse. Tänutäheks saadame selle Sulle tasuta. Kui Sul endal on ajakiri juba tellitud, telli tasuta number heale sõbrale, kolleegile voi sugulasele.</p>
+				</div>
+				<div class="articles">
+					<ul class="accordion">
+						<li>
+							<h5 class="number" id="num">0 / 3</h5>
+						    <a class="toggle" href="javascript:void(0);">Pingelised sündmused</a>
+						    <ul id="innerId" class="inner show">
+						    	<li>
+							    	<div class="row">
+						    			<input type="checkbox" class="count" onclick="updateCount(); makeActive();">
+						    			<img src="img/aaretejaht.png" alt="" class="article-image">
+						    			<div class="post">
+							    			<p class="name">Aaretejaht</p>
+						    				<p class="description" >
+							    			1820: Hispaanlased lastivad laeva aaretega, kuid see röövitakse ja aare peidetakse väiksele saarele. Tänapäeva aaretejahtija läheb seda otsima.
+							    			</p>	
+							    		</div>						    		
+							    	</div>
+							    	<div class="row">
+						    			<input type="checkbox" class="count" onclick="updateCount(); makeActive();">
+						    			<img src="img/orkaan.png" alt="" class="article-image">
+						    			<div class="post">
+							    			<p class="name">Purustav orkaan</p>
+						    				<p class="description">
+							    			1900: Orkaan purustab Galvestoni linna. Katastroofis hukkub 8000 inimest ning see USA linn kaotab igaveseks oma jõukuse ja sära.
+							    			</p>	
+							    		</div>						    		
+							    	</div>
+							    	<div class="row">
+						    			<input type="checkbox" class="count" onclick="updateCount(); makeActive();">
+						    			<img src="img/lennuk.png" alt="" class="article-image">
+						    			<div class="post">
+							    			<p class="name">Hirmsaim lennukatastroof</p>
+						    				<p class="description">
+							    			1977: Gran Canaria lennuväljal plahvatanud pommi tõttu suunatakse paljud lennud Tenerifele. Tekkinud segaduses juhtub ajaloo suurim lennuõnnestus.
+							    			</p>
+							    		</div>							    		
+							    	</div>
+							    	<div class="row">
+						    			<input type="checkbox" class="count" onclick="updateCount(); makeActive();">
+						    			<img src="img/samurai.png" alt="" class="article-image">
+						    			<div class="post">
+							    			<p class="name">Samuraide kättemaks</p>
+						    				<p class="description">
+							    			1703: Noor mees sunnitakse enesetapule ning tema klanni samuraid peavad perekonna au taastama.
+							    			</p>	
+							    		</div>						    		
+							    	</div>
+							    	<div class="row">
+						    			<input type="checkbox" class="count" onclick="updateCount(); makeActive();">
+						    			<img src="img/azorian.png" alt="" class="article-image">
+						    			<div class="post">
+							    			<p class="name">Project Azorian</p>
+						    				<p class="description" >
+							    			1968: Ootamatult upub nõukogude allveelaev K-129 tuumarakettidega pardal. Mõne aasta pärast alustab CIA vaenlase allveelaeva koopia ehitamist - algab projekt Azorian.
+							    			</p>	
+							    		</div>						    		
+							    	</div>
+							    	<div class="row" >
+						    			<input type="checkbox" class="count" onclick="updateCount(); makeActive();">
+						    			<img src="img/viis.png" alt="" class="article-image">
+						    			<div class="post">
+							    			<p class="name">Viis ööpaeva põrgus</p>
+						    				<p class="description" >
+							    			1977: Palestiina terroristid kaaperdavad reisilennuki. Tund-tunnilt kustub reisijate lootus eluga pääseda. Lääne-Saaksamaa saadab Somaaliasse teel olevale lennukile vastu eriüksuse.
+							    			</p>
+							    		</div>							    		
+							    	</div>	
+							    	<div class="row">
+						    			<input type="checkbox" class="count" onclick="updateCount(); makeActive();">
+						    			<img src="img/Tuum.png" alt="" class="article-image">
+						    			<div class="post">
+							    			<p class="name">Tuumakatastroof Tšernobõlis</p>
+						    				<p class="description">
+							    			1986: Suur osa Nõukogude Liidu elektrist tuleb tuumajaamadest, kuid nende ehitamisel on tehtud mitmeid vigu. 26. aprillil toimub Tšernobõli tuumajaamas plahvatus ning ajaloo suurim tuumakatastroof saab tõeks.
+							    			</p>
+							    		</div>							    		
+							    	</div>
+							    </li>
+							    <li><a class="btn-next" href="javascript:void(0);">Järgmine teema</a></li>								    					    					    	
+						    </ul>
+						 </li>
+					</ul>
+				</div>				
+				<div class="articles">
+					<ul class="accordion">
+						<li>
+							<h5 class="number" id="num1">0 / 3</h5>
+						    <a class="toggle" href="javascript:void(0);">Kuulsad teod</a>
+						    <ul id="innerId1" class="inner" style="display: none;">
+						    	<li>
+							    	<div class="row">
+						    			<input type="checkbox" class="count1" onclick="updateCount1(); makeActive();">
+						    			<img src="img/aaretejaht.png" alt="" class="article-image">
+						    			<div class="post">
+							    			<p class="name">Aaretejaht</p>
+						    				<p class="description">
+							    			1820: Hispaanlased lastivad laeva aaretega, kuid see roovitakse ja aare peidetakse vaiksele saarele. Tanapaeva aaretejahtija laheb seda otsima.
+							    			</p>	
+							    		</div>						    		
+							    	</div>
+							    	<div class="row">
+						    			<input type="checkbox" class="count1" onclick="updateCount1(); makeActive();">
+						    			<img src="img/orkaan.png" alt="" class="article-image">
+						    			<div class="post">
+							    			<p class="name">Purustav orkaan</p>
+						    				<p class="description">
+							    			1900: Orkaan purustab Galvestoni linna. Katastroofis hukkub 8000 inimest ning see USA linn kaotab igaveseks oma joukuse ja sara.
+							    			</p>	
+							    		</div>						    		
+							    	</div>
+							    	<div class="row">
+						    			<input type="checkbox" class="count1" onclick="updateCount1(); makeActive();">
+						    			<img src="img/lennuk.png" alt="" class="article-image">
+						    			<div class="post">
+							    			<p class="name">Hirmsaim lennukatastroof</p>
+						    				<p class="description">
+							    			1977: Gran Canaria lennuvaljal plahvatanud pommi tottu suunatakse paljud lennud Tenerifele. Tekkinud segaduses juhtub ajaloo suurim lennuonnestus.
+							    			</p>
+							    		</div>							    		
+							    	</div>
+							    	<div class="row">
+						    			<input type="checkbox" class="count1" onclick="updateCount1(); makeActive();">
+						    			<img src="img/samurai.png" alt="" class="article-image">
+						    			<div class="post">
+							    			<p class="name">Samuraide kattemaks</p>
+						    				<p class="description">
+							    			1703: Noor mees sunnitakse enesetapule ning tema klanni samuraid peavad perekonna au taastama.
+							    			</p>	
+							    		</div>						    		
+							    	</div>
+							    	<div class="row">
+						    			<input type="checkbox" class="count1" onclick="updateCount1(); makeActive();">
+						    			<img src="img/azorian.png" alt="" class="article-image">
+						    			<div class="post">
+							    			<p class="name">Project Azorian</p>
+						    				<p class="description">
+							    			1968: Ootamatult upub noukogude allveelaev K-129 tuumarakettidega pardal. Mone aasta parast alustab CIA vaenlase allveelaeva koopia ehitamist - algab projekt Azorian.
+							    			</p>	
+							    		</div>						    		
+							    	</div>
+							    	<div class="row">
+						    			<input type="checkbox" class="count1" onclick="updateCount1(); makeActive();">
+						    			<img src="img/viis.png" alt="" class="article-image">
+						    			<div class="post">
+							    			<p class="name">Viis oopaeva porgus</p>
+						    				<p class="description">
+							    			1977: Palestiina terroristid kaaperdavad reisilennuki. Tund-tunnilt kustub reisijate lootus eluga paaseda. Laane-Saaksama saadab Somaaliasse teel olevale lennukile vastu eriuksuse.
+							    			</p>
+							    		</div>							    		
+							    	</div>	
+							    	<div class="row">
+						    			<input type="checkbox" class="count1" onclick="updateCount1(); makeActive();">
+						    			<img src="img/Tuum.png" alt="" class="article-image">
+						    			<div class="post">
+							    			<p class="name">Tuumakatastroof Tsernobolis</p>
+						    				<p class="description">
+							    			1986: Suur osa Nõukogude Liidu elektrist tuleb tuumajaamadest, kuid nende ehitamisel on tehtud mitmeid vigu. 26. aprillil toimub Tšernobõli tuumajaamas plahvatus ning ajaloo suurim tuumakatastroof saab tõeks.
+							    			</p>
+							    		</div>							    		
+							    	</div>
+						    	</li>	
+						    	<li><a id="nextButton" class="btn-next" href="javascript:void(0);">Järgmine teema</a></li>				    	
+						    </ul>
+						 </li>
+					</ul>
+				</div>				
+				<div class="articles">
+					<ul class="accordion">
+						<li>
+							<h5 class="number" id="num2">0 / 3</h5>
+						    <a id="special" class="toggle" href="javascript:void(0);">Igapäevane elu</a>
+						    <ul id="innerId2" class="inner" style="display: none;">
+						    	<li>
+							    	<div class="row">
+						    			<input type="checkbox" class="count2" onclick="updateCount2(); makeActive();">
+						    			<img src="img/aaretejaht.png" alt="" class="article-image">
+						    			<div class="post">
+							    			<p class="name">Aaretejaht</p>
+						    				<p class="description">
+							    			1820: Hispaanlased lastivad laeva aaretega, kuid see roovitakse ja aare peidetakse vaiksele saarele. Tanapaeva aaretejahtija laheb seda otsima.
+							    			</p>	
+							    		</div>						    		
+							    	</div>
+							    	<div class="row">
+						    			<input type="checkbox" class="count2" onclick="updateCount2(); makeActive();">
+						    			<img src="img/orkaan.png" alt="" class="article-image">
+						    			<div class="post">
+							    			<p class="name">Purustav orkaan</p>
+						    				<p class="description">
+							    			1900: Orkaan purustab Galvestoni linna. Katastroofis hukkub 8000 inimest ning see USA linn kaotab igaveseks oma joukuse ja sara.
+							    			</p>	
+							    		</div>						    		
+							    	</div>
+							    	<div class="row">
+						    			<input type="checkbox" class="count2" onclick="updateCount2(); makeActive();">
+						    			<img src="img/lennuk.png" alt="" class="article-image">
+						    			<div class="post">
+							    			<p class="name">Hirmsaim lennukatastroof</p>
+						    				<p class="description">
+							    			1977: Gran Canaria lennuvaljal plahvatanud pommi tottu suunatakse paljud lennud Tenerifele. Tekkinud segaduses juhtub ajaloo suurim lennuonnestus.
+							    			</p>
+							    		</div>							    		
+							    	</div>
+							    	<div class="row">
+						    			<input type="checkbox" class="count2" onclick="updateCount2(); makeActive();">
+						    			<img src="img/samurai.png" alt="" class="article-image">
+						    			<div class="post">
+							    			<p class="name">Samuraide kattemaks</p>
+						    				<p class="description">
+							    			1703: Noor mees sunnitakse enesetapule ning tema klanni samuraid peavad perekonna au taastama.
+							    			</p>	
+							    		</div>						    		
+							    	</div>
+							    	<div class="row">
+						    			<input type="checkbox" class="count2" onclick="updateCount2(); makeActive();">
+						    			<img src="img/azorian.png" alt="" class="article-image">
+						    			<div class="post">
+							    			<p class="name">Project Azorian</p>
+						    				<p class="description">
+							    			1968: Ootamatult upub noukogude allveelaev K-129 tuumarakettidega pardal. Mone aasta parast alustab CIA vaenlase allveelaeva koopia ehitamist - algab projekt Azorian.
+							    			</p>	
+							    		</div>						    		
+							    	</div>
+							    	<div class="row">
+						    			<input type="checkbox" class="count2" onclick="updateCount2(); makeActive();">
+						    			<img src="img/viis.png" alt="" class="article-image">
+						    			<div class="post">
+							    			<p class="name">Viis oopaeva porgus</p>
+						    				<p class="description">
+							    			1977: Palestiina terroristid kaaperdavad reisilennuki. Tund-tunnilt kustub reisijate lootus eluga paaseda. Laane-Saaksama saadab Somaaliasse teel olevale lennukile vastu eriuksuse.
+							    			</p>
+							    		</div>							    		
+							    	</div>	
+							    	<div class="row">
+						    			<input type="checkbox" class="count2" onclick="updateCount2(); makeActive();">
+						    			<img src="img/Tuum.png" alt="" class="article-image">
+						    			<div class="post">
+							    			<p class="name">Tuumakatastroof Tsernobolis</p>
+						    				<p class="description">
+							    			1986: Suur osa Nõukogude Liidu elektrist tuleb tuumajaamadest, kuid nende ehitamisel on tehtud mitmeid vigu. 26. aprillil toimub Tšernobõli tuumajaamas plahvatus ning ajaloo suurim tuumakatastroof saab tõeks.
+							    			</p>
+							    		</div>							    		
+							    	</div>	
+							    </li>
+							    <li><a id="nextButton1" class="btn-next" href="javascript:void(0);">Järgmine teema</a></li>					    	
+						    </ul>
+						 </li>
+					</ul>
+				</div>
+				<div class="articles">
+					<ul class="accordion">
+						<li>
+							<h5 class="number" id="num3">0 / 3</h5>
+						    <a id="special1" class="toggle" href="javascript:void(0);">Suured konfliktid</a>
+						    <ul id="innerId3" class="inner" style="display: none;">
+						    	<li>
+							    	<div class="row">
+						    			<input type="checkbox" class="count3" onclick="updateCount3(); makeActive();">
+						    			<img src="img/aaretejaht.png" alt="" class="article-image">
+						    			<div class="post">
+							    			<p class="name">Aaretejaht</p>
+						    				<p class="description">
+							    			1820: Hispaanlased lastivad laeva aaretega, kuid see roovitakse ja aare peidetakse vaiksele saarele. Tanapaeva aaretejahtija laheb seda otsima.
+							    			</p>	
+							    		</div>						    		
+							    	</div>
+							    	<div class="row">
+						    			<input type="checkbox" class="count3" onclick="updateCount3(); makeActive();">
+						    			<img src="img/orkaan.png" alt="" class="article-image">
+						    			<div class="post">
+							    			<p class="name">Purustav orkaan</p>
+						    				<p class="description">
+							    			1900: Orkaan purustab Galvestoni linna. Katastroofis hukkub 8000 inimest ning see USA linn kaotab igaveseks oma joukuse ja sara.
+							    			</p>	
+							    		</div>						    		
+							    	</div>
+							    	<div class="row">
+						    			<input type="checkbox" class="count3" onclick="updateCount3(); makeActive();">
+						    			<img src="img/lennuk.png" alt="" class="article-image">
+						    			<div class="post">
+							    			<p class="name">Hirmsaim lennukatastroof</p>
+						    				<p class="description">
+							    			1977: Gran Canaria lennuvaljal plahvatanud pommi tottu suunatakse paljud lennud Tenerifele. Tekkinud segaduses juhtub ajaloo suurim lennuonnestus.
+							    			</p>
+							    		</div>							    		
+							    	</div>
+							    	<div class="row">
+						    			<input type="checkbox" class="count3" onclick="updateCount3(); makeActive();">
+						    			<img src="img/samurai.png" alt="" class="article-image">
+						    			<div class="post">
+							    			<p class="name">Samuraide kattemaks</p>
+						    				<p class="description">
+							    			1703: Noor mees sunnitakse enesetapule ning tema klanni samuraid peavad perekonna au taastama.
+							    			</p>	
+							    		</div>						    		
+							    	</div>
+							    	<div class="row">
+						    			<input type="checkbox" class="count3" onclick="updateCount3(); makeActive();">
+						    			<img src="img/azorian.png" alt="" class="article-image">
+						    			<div class="post">
+							    			<p class="name">Project Azorian</p>
+						    				<p class="description">
+							    			1968: Ootamatult upub noukogude allveelaev K-129 tuumarakettidega pardal. Mone aasta parast alustab CIA vaenlase allveelaeva koopia ehitamist - algab projekt Azorian.
+							    			</p>	
+							    		</div>						    		
+							    	</div>
+							    	<div class="row">
+						    			<input type="checkbox" class="count3" onclick="updateCount3(); makeActive();">
+						    			<img src="img/viis.png" alt="" class="article-image">
+						    			<div class="post">
+							    			<p class="name">Viis oopaeva porgus</p>
+						    				<p class="description">
+							    			1977: Palestiina terroristid kaaperdavad reisilennuki. Tund-tunnilt kustub reisijate lootus eluga paaseda. Laane-Saaksama saadab Somaaliasse teel olevale lennukile vastu eriuksuse.
+							    			</p>
+							    		</div>							    		
+							    	</div>	
+							    	<div class="row">
+						    			<input type="checkbox" class="count3" onclick="updateCount3(); makeActive();">
+						    			<img src="img/Tuum.png" alt="" class="article-image">
+						    			<div class="post">
+							    			<p class="name">Tuumakatastroof Tsernobolis</p>
+						    				<p class="description">
+							    			1986: Suur osa Nõukogude Liidu elektrist tuleb tuumajaamadest, kuid nende ehitamisel on tehtud mitmeid vigu. 26. aprillil toimub Tšernobõli tuumajaamas plahvatus ning ajaloo suurim tuumakatastroof saab tõeks.
+							    			</p>
+							    		</div>							    		
+							    	</div>	
+						    	</li>					    	
+						    </ul>
+						 </li>
+					</ul>
+				</div>	
+				<a class="btn-done btn-innactive" id="done">Valmis!</a>
+				<div class="information">
+					<h4 class="history"><span class="journal-name">Imeline Ajalugu</span> on pohjamaade populaarseim ajalooajakiri, millel on Eestis ule 50 000 lugeja. Ajakiri ilmub kord kuus, igas numbris on ponevad ja rikkalikult illustreeritud lood ligi 100 lehekuljel. Imelist Ajalugu annab Eestis valja AS Aripaev alates 2011 aasta sugisest.</h4>							
+				</div>
+				<div class="img-bottom">
+					<img src="img/covers.png" alt="" class="journal-img">
+				</div>	
+			</div>
+		</div>
+		<div id="footer">
+			<div class="container">
+				<h5 class="conditions" data-fancybox data-src="#fancybox">Tutvu kampaania tingimustega</h5>
+				<h5 class="contact">Klienditeeninduse e-post: <span class="conditions">register@imelineajalugu.ee,</span> tel: 667 0099 (toopaeviti 9 - 17)</h5>
+			</div>
+		</div>
+		<div class="hidden" id="fancybox">
+        	<h3>Kampaania tingimused</h3>
+        	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit quod, veniam rerum commodi. Eligendi consequatur dignissimos ut perspiciatis optio incidunt inventore, corrupti similique repudiandae ducimus, praesentium, dolore voluptatem reiciendis vitae!</p>
+        	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit quod, veniam rerum commodi. Eligendi consequatur dignissimos ut perspiciatis optio incidunt inventore, corrupti similique repudiandae ducimus, praesentium, dolore voluptatem reiciendis vitae!</p>
+        	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit quod, veniam rerum commodi. Eligendi consequatur dignissimos ut perspiciatis optio incidunt inventore, corrupti similique repudiandae ducimus, praesentium, dolore voluptatem reiciendis vitae!</p>
+        	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit quod, veniam rerum commodi. Eligendi consequatur dignissimos ut perspiciatis optio incidunt inventore, corrupti similique repudiandae ducimus, praesentium, dolore voluptatem reiciendis vitae!</p>
+    	</div>  
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
