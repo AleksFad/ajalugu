@@ -571,7 +571,6 @@ a:not([href]):not([tabindex]){
     }
     .transformed{
     	margin-top: 35px;
-    	margin-left: -8px;
     }
     .journal-img {
 	    width: 340px;
@@ -584,12 +583,11 @@ a:not([href]):not([tabindex]){
 		-o-transform: rotate(-66deg);
 		transform: rotate(-66deg);
 	}
-}
-@media only screen and (max-width: 360px){
 	.post {
 	    left: 42%;
 	}
 }
+
 @media only screen and (max-width: 320px){
 	.container {
     	width: 320px;
